@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Homework - Homework Task App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS for styling -->
+    <style>
+        body {
+            background-color: #f0f0f0; /* Light gray background */
+            padding: 20px;
+        }
+        .page-title {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-3">
+            <h3 class="page-title">Navigation</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"> <i class="bi bi-house-door"></i> Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="addwork.html"> <i class="bi bi-file-earmark-plus"></i> Add Homework </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="completed.html"> <i class="bi bi-check2-all"></i> Completed Homework </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="upcoming.html"> <i class="bi bi-calendar"></i> Upcoming Homework </a>
+                </li>
+    
+            </ul>
+        </div>
+        <!-- Main Content -->
+        <div class="col-md-9">
+            <h2 class="page-title">Add Homework</h2>
+            <!-- Form to add homework -->
+            <form>
+                <div class="mb-3">
+                    <label for="homeworkTitle" class="form-label">Homework Title</label>
+                    <input type="text" class="form-control" id="homeworkTitle" placeholder="Enter homework title" required>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea class="form-control" id="description" rows="3" placeholder="Enter description"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="dueDate" class="form-label">Due Date</label>
+                    <input type="date" class="form-control" id="dueDate" required>
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <select class="form-select" id="subject">
+                        <option value="">Choose subject...</option>
+                        <option value="math">Math</option>
+                        <option value="science">Science</option>
+                        <option value="history">History</option>
+                        <option value="english">English</option>
+                        <!-- Add more subjects as needed -->
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Homework</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
